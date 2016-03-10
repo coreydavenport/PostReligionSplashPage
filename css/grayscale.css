@@ -1,0 +1,518 @@
+/* CSS RESET */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, em, img, strong, sub, sup, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, time {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* Styles */
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Lora,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #fff;
+    background-color: #fff;
+}
+
+footer {
+    width: 100%;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    font-family: Arial,'Arial', Helvetica,sans-serif;
+    color: black;
+    text-align: center;
+
+
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 35px;
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+p {
+    margin: 0 0 25px;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+.glitch {
+  color: black;
+  font-size: 100px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(4px, 9999px, 65px, 0);
+  }
+  5% {
+    clip: rect(64px, 9999px, 62px, 0);
+  }
+  10% {
+    clip: rect(7px, 9999px, 87px, 0);
+  }
+  15% {
+    clip: rect(8px, 9999px, 57px, 0);
+  }
+  20% {
+    clip: rect(93px, 9999px, 57px, 0);
+  }
+  25% {
+    clip: rect(69px, 9999px, 25px, 0);
+  }
+  30% {
+    clip: rect(49px, 9999px, 1px, 0);
+  }
+  35% {
+    clip: rect(45px, 9999px, 89px, 0);
+  }
+  40% {
+    clip: rect(51px, 9999px, 39px, 0);
+  }
+  45% {
+    clip: rect(100px, 9999px, 95px, 0);
+  }
+  50% {
+    clip: rect(75px, 9999px, 50px, 0);
+  }
+  55% {
+    clip: rect(87px, 9999px, 43px, 0);
+  }
+  60% {
+    clip: rect(2px, 9999px, 69px, 0);
+  }
+  65% {
+    clip: rect(18px, 9999px, 27px, 0);
+  }
+  70% {
+    clip: rect(23px, 9999px, 41px, 0);
+  }
+  75% {
+    clip: rect(83px, 9999px, 57px, 0);
+  }
+  80% {
+    clip: rect(51px, 9999px, 30px, 0);
+  }
+  85% {
+    clip: rect(7px, 9999px, 44px, 0);
+  }
+  90% {
+    clip: rect(48px, 9999px, 4px, 0);
+  }
+  95% {
+    clip: rect(52px, 9999px, 17px, 0);
+  }
+  100% {
+    clip: rect(9px, 9999px, 26px, 0);
+  }
+}
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 2px;
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: black;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(48px, 9999px, 5px, 0);
+  }
+  5% {
+    clip: rect(100px, 9999px, 40px, 0);
+  }
+  10% {
+    clip: rect(14px, 9999px, 43px, 0);
+  }
+  15% {
+    clip: rect(22px, 9999px, 88px, 0);
+  }
+  20% {
+    clip: rect(87px, 9999px, 58px, 0);
+  }
+  25% {
+    clip: rect(69px, 9999px, 10px, 0);
+  }
+  30% {
+    clip: rect(54px, 9999px, 59px, 0);
+  }
+  35% {
+    clip: rect(41px, 9999px, 77px, 0);
+  }
+  40% {
+    clip: rect(96px, 9999px, 25px, 0);
+  }
+  45% {
+    clip: rect(76px, 9999px, 8px, 0);
+  }
+  50% {
+    clip: rect(73px, 9999px, 47px, 0);
+  }
+  55% {
+    clip: rect(37px, 9999px, 5px, 0);
+  }
+  60% {
+    clip: rect(62px, 9999px, 84px, 0);
+  }
+  65% {
+    clip: rect(47px, 9999px, 41px, 0);
+  }
+  70% {
+    clip: rect(29px, 9999px, 55px, 0);
+  }
+  75% {
+    clip: rect(3px, 9999px, 40px, 0);
+  }
+  80% {
+    clip: rect(79px, 9999px, 26px, 0);
+  }
+  85% {
+    clip: rect(27px, 9999px, 83px, 0);
+  }
+  90% {
+    clip: rect(16px, 9999px, 23px, 0);
+  }
+  95% {
+    clip: rect(16px, 9999px, 16px, 0);
+  }
+  100% {
+    clip: rect(29px, 9999px, 1px, 0);
+  }
+}
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: -2px;
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: black;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+
+.brand-heading {
+    position: -moz-absolute;
+    top: -45px;
+    font-size: 80px;
+}
+
+
+
+.btn-outline {
+    background-color: transparent;
+    color: inherit;
+    transition: all .5s;
+    height: 50px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 48px;
+    font-weight: 100;
+    padding: 35px;
+    line-height: 0px;
+}
+
+.btn-danger.btn-outline:hover {
+    color: #fff;
+}
+
+@media(min-width:768px) {
+    p {
+        margin: 0 0 35px;
+        font-size: 20px;
+        line-height: 1.6;
+    }
+}
+
+a {
+    color: black;
+
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+a:hover,
+a:focus {
+    transform: scale(1.1);
+    text-decoration: none;
+}
+
+.light {
+    font-weight: 400;
+}
+
+.navbar-custom {
+    margin-bottom: 0;
+    border-bottom: 1px solid rgba(255,255,255,.3);
+    text-transform: uppercase;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    background-color: #fff;
+}
+
+.navbar-custom .navbar-brand {
+    font-weight: 700;
+}
+
+.navbar-custom .navbar-brand:focus {
+    outline: 0;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle {
+    padding: 4px 6px;
+    font-size: 16px;
+    color: black;
+}
+
+.navbar-custom .navbar-brand .navbar-toggle:focus,
+.navbar-custom .navbar-brand .navbar-toggle:active {
+    outline: 0;
+}
+
+.navbar-custom a {
+    color: black;
+}
+
+.navbar-custom .nav li a {
+    -webkit-transition: background .3s ease-in-out;
+    -moz-transition: background .3s ease-in-out;
+    transition: background .3s ease-in-out;
+}
+
+.navbar-custom .nav li a:hover {
+    outline: 0;
+    color: rgba(255,255,255,.8);
+    background-color: transparent;
+}
+
+.navbar-custom .nav li a:focus,
+.navbar-custom .nav li a:active {
+    outline: 0;
+    background-color: transparent;
+}
+
+.navbar-custom .nav li.active {
+    outline: 0;
+}
+
+.navbar-custom .nav li.active a {
+    background-color: rgba(255,255,255,.3);
+}
+
+.navbar-custom .nav li.active a:hover {
+    color: #fff;
+}
+
+@media(min-width:768px) {
+    .navbar-custom {
+        padding: 20px 0;
+        border-bottom: 0;
+        letter-spacing: 1px;
+        background: 0 0;
+        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+        transition: background .5s ease-in-out,padding .5s ease-in-out;
+    }
+
+    .navbar-custom.top-nav-collapse {
+        padding: 0;
+        border-bottom: 1px solid rgba(255,255,255,.3);
+        background: #000;
+    }
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: black;
+    background-color: #fff;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.intro .intro-body .brand-heading {
+    font-size: -moz-40px;
+}
+
+.intro .intro-body .intro-text {
+    font-size: 18px;
+}
+
+@media(min-width:768px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: -webkit-80px;
+        font-size: -moz-100px;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+
+}
+
+@media(max-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 50px;
+        position: absolute;
+        left: 50;
+        width: 100%;
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 18px;
+    }
+
+    .glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 48px;
+  width: 100%
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: black;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
+}
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 52px;
+  width: 100%
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: black;
+  background: white;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+
+}
+
+
+@-webkit-keyframes pulse {    
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+@-moz-keyframes pulse {    
+    0% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -moz-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    100% {
+        -moz-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+ul.banner-social-buttons {
+    margin-top: 0;
+}
+
+@media(max-width:1199px) {
+    ul.banner-social-buttons {
+        margin-top: 15px;
+    }
+}
+
+@media(max-width:767px) {
+    ul.banner-social-buttons li {
+        display: block;
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    ul.banner-social-buttons li:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+
